@@ -1,0 +1,64 @@
+body{
+    background-image: url("https://img.freepik.com/premium-photo/flat-lay-vacation-concept-with-flip-flops_23-2148228666.jpg?w=2000");
+   
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;  
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding:  1%  7%;   /* top right bottom left */
+    /* background-image: url("https://image.shutterstock.com/image-photo/multicolor-powder-explosion-on-black-260nw-1935937942.jpg"); */
+    /* background-color: black; */
+    /* background-repeat: no-repeat;
+    background-size:cover; */
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(45, 101, 165, 0.8);
+}
+
+
+#navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: black;
+    color: blue;
+    
+    
+}
+#navbar li{
+    
+    padding: 0 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+    
+    
+}
+a{
+    color: blue;
+    font-size:20px;
+    font-weight:bold;
+   
+}
+
+.box{
+    border: 2px solid black;
+    background-color:black;
+    width:50%;
+    margin: 0 auto;
+}
+
+.ip{
+    text-align:left;
+    width: 50%;
+    /* margin: 0 auto; */
+}

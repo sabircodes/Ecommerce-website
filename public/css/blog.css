@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color:beige; */
+    overflow-x: hidden;
+    text-align: left;
+    
+    
+}
+#logo {
+    height: 100px;
+    width:100px;
+}
+
+/* nav bar begins */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding:  1%  7%;   /* top right bottom left */
+    /* background-image: url("https://image.shutterstock.com/image-photo/multicolor-powder-explosion-on-black-260nw-1935937942.jpg"); */
+    /* background-color: black; */
+    /* background-repeat: no-repeat;
+    background-size:cover; */
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(45, 101, 165, 0.8);
+}
+
+
+#navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: black;
+    color: black;
+    
+    
+}
+#navbar li{
+    
+    padding: 0 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+    
+    
+}
+/* main body */
+.sec1{
+    /* background-image: url(https://www.theablestate.com/wp-content/uploads/2021/05/software-developer-community.jpg); */
+    background-color: #ECCCB2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align : center;
+    padding: 5% 5%;
+}
+.sec1 #img1{
+    border: 0.1px solid white ;
+    border-radius: 10%;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px #ccc;
+    -khtml-box-shadow: 10px 10px 5px #ccc;
+    margin-top:60px;
+
+}
+
+.sec1 h1{
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    font-size: 100px;
+    color:black;
+    /* text-shadow: 1px 1px 0px #ff0000; */
+    margin-bottom: 40px;
+}
+
+p{
+    font-family: 'Caveat', cursive;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color:black;
+}
+
+.sec2{
+    /* background-color: #59CE8F; */
+    background-image: url(/images/img3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 10% 3%;
+}
+.sec2 h1{
+    color:black;
+    text-shadow: none;
+}
+
+
+#footer{
+    color: black;
+    /* text-align: center; */
+    padding: 50px 10px;
+    /* background-image: url("https://captionsgram.com/wp-content/uploads/2020/12/Laugh-Puns.jpg"); */
+    background-position: center;
+    /* background-image: url("img/home2.jpg"); */
+    background-color: #000000;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between; */
+    
+}
+
+.glossing{
+    padding: 8% 3%;
+    background-color: #F5E8C7;
+}
+#footer h1{
+    font-size:28px;
+    text-transform: capitalize;
+    padding-bottom:20px;
+    position: relative;
+}
+#footer h1::before{
+    content:'';
+    position: absolute;
+    left:0;
+    background-color: red;
+    bottom: 10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+#footer ul li:not(:last-child){
+    margin-bottom:10px;
+}
+#footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight:300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+}
+#footer ul li a:hover{
+    color: #ffff;
+    padding-left: 10px;
+}
+#footer .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    line-height: 50px;
+    border-radius:50%;
+
+}

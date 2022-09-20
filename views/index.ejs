@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommmerce</title>
+    <!-- aos from github -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- logo -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Lobster&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstr0ap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">DEVILS WARDROBE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="alternate" href="/"> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/shop">SHOP </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/blog"> BLOG </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/contact"> CONTACT ME </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/login"> Login </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!-- home page  first section -->
+    <section id="home1">
+      <div id="content" data-aos="fade-down-right">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons&up to 70%off!</p>
+        <button>Shop Now</button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+
+    <!-- home page section 2 -->
+    <section id="home2">
+      <h1>Reasons to choose us</h1>
+      <div class="row con">
+        <div class="feature-box col-lg-3 icons" data-aos="fade-down">
+          <img
+            src="https://img.icons8.com/ios-filled/100/000000/price-tag-euro.png"
+          />
+          <p>Best prices</p>
+        </div>
+
+        <div class="feature-box col-lg-3 icons" data-aos="fade-down">
+          <img
+            src="https://img.icons8.com/pastel-glyph/64/000000/fast-delivery--v1.png"
+          />
+          <p>Fastest Delivery</p>
+        </div>
+        <div class="feature-box col-lg-3 icons" data-aos="fade-down">
+          <img
+            src="https://img.icons8.com/external-glyph-geotatah/64/000000/external-authenticate-sensorization-of-things-glyph-glyph-geotatah.png"
+          />
+          <p>Authentic Delivery</p>
+        </div>
+        <div class="feature-box col-lg-3 icons" data-aos="fade-down">
+          <img
+            src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/66/000000/external-savings-banking-and-finance-smashingstocks-glyph-smashing-stocks.png"
+          />
+          <p>Savings</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- display -->
+    <section id="decorate">
+      <div
+        id="testimonials-carousel"
+        class="carousel slide carousel-fade"
+        [animation]="'fade'"
+        data-ride="false"
+        data-aos="flip-down"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img
+              class="fashion-img"
+              src="https://i.pinimg.com/736x/01/25/20/0125207bea962acdb3e014c0892887f6--fashion-poses-fashion-male.jpg"
+              alt="male-models"
+            />
+            <h2 class="testimonial-text">The best brands on the internet</h2>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="fashion-img"
+              src="https://thefashionfrill.com/wp-content/uploads/2021/12/London-Fashion-Influencers.jpg"
+              alt="female-model"
+            />
+            <h2 class="testimonial-text">The hottest fashions</h2>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="fashion-img"
+              src="https://cdnpt01.viewbug.com/media/mediafiles/2018/04/15/78489158_large.jpg"
+              alt="female-model"
+            />
+            <h2 class="testimonial-text">Something for everyone</h2>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="fashion-img"
+              src="https://i.pinimg.com/564x/c0/10/4f/c0104f1adbb52e220b112bde7aa4b78f--photography-ideas-memories.jpg"
+              alt="female-model"
+            />
+            <h2 class="testimonial-text">Be YOU</h2>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-target="#testimonials-carousel"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-target="#testimonials-carousel"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Man Women section display -->
+    <div class="row" id="mw">
+      <div class="col-lg-6 shop">
+        <h1 style="color: black">Women</h1>
+        <img
+          src="https://thefashionfrill.com/wp-content/uploads/2021/09/Sophia-Roe-827x1024.jpg"
+          alt="shopie-roe"
+        />
+        <div class="overlay">
+          <a class="text">SHOP WOMEN</a>
+        </div>
+      </div>
+      <div class="col-lg-6 shop">
+        <h1 style="color: black">Mens</h1>
+        <img
+          src="http://www.shaneklein.net/wp-content/uploads/2015/11/IMG_01421.jpg"
+          alt="male-model"
+        />
+        <div class="overlay">
+          <a class="text">SHOP MENS</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRODUCT -->
+    <section id="product">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- card1 -->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://assets.vogue.com/photos/61f9778f2d50a53718bb8a6b/master/w_1280%2Cc_limit/00001-Versace-Mens-FW-22-credit-brand.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">VERSACE</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <!-- card2 -->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://www.armani.com/variants/images/34344356236916123/F/w400.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">ARMANI</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <!-- card3 -->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7VABxMEaWDToxMMBcdTbrqmzqpzOVZ5e69g&usqp=CAU"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">LUOIS VUITON</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="#" class="btn btn-primary">Go</a>
+              </div>
+            </div>
+          </div>
+          <!-- card4 -->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://5.imimg.com/data5/ANDROID/Default/2021/4/PH/TE/OZ/63529727/product-jpeg-500x500.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">NIKE</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card5 -->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://cdn-images.farfetch-contents.com/17/59/38/32/17593832_36728212_300.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">OFF WHITE</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- card6-->
+          <div class="feature-box col-lg-4" data-aos="zoom-out-down">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000/m/4309/fdd5/9494/3c0b/881a/a12a/f63a/6e87/2831/a9d6/a9d6.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">BAPE</h5>
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner">
+      <div class="banner-box" data-aos="zoom-out-down">
+        <h3>Something</h3>
+        <h1>Buy one get one free!</h1>
+        <span>The best brands are on sale</span>
+        <button>Know more</button>
+      </div>
+      <div class="banner-box2" data-aos="zoom-out-down">
+        <h3 style="color: black">YOUR SEARCH ENDS HERE</h3>
+        <h2>FIND LUXURY ON DISCOUNT</h2>
+        <!-- <span>The best brands are on sale</span> -->
+        <button>Know more</button>
+      </div>
+
+
+
+    </section>
+    <!-- //footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h1>Company</h1>
+            <ul>
+              <li>
+                <a href="#">About us</a>
+              </li>
+              <li>
+                <a href="#">Our services</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h1>Get help</h1>
+            <ul>
+              <li>
+                <a href="#">FAQ</a>
+              </li>
+              <li>
+                <a href="#">Shopping</a>
+              </li>
+              <li>
+                <a href="#">return</a>
+              </li>
+              <li>
+                <a href="#">Order Status</a>
+              </li>
+              <li>
+                <a href="#">Paymnet option</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h1>Follow us</h1>
+            <div class="social-links">
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                  <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- AOS js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        duration: 2000,
+      });
+    </script>
+  </body>
+</html>

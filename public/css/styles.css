@@ -1,0 +1,471 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color:beige; */
+    overflow-x: hidden;
+    
+    
+}
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+h2{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+}
+h3{
+    font-family: 'Caveat', cursive;
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+}
+h4{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 1.8rem;
+    margin: 0;
+    color: white;
+}
+p{
+    margin: 0;
+    color: white;
+}
+
+#logo {
+    height: 100px;
+    width:100px;
+}
+
+/* nav bar begins */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding:  1%  7%;   /* top right bottom left */
+    /* background-image: url("https://image.shutterstock.com/image-photo/multicolor-powder-explosion-on-black-260nw-1935937942.jpg"); */
+    /* background-color: black; */
+    /* background-repeat: no-repeat;
+    background-size:cover; */
+    background-color: black;
+    box-shadow: 0 5px 15px rgba(45, 101, 165, 0.8);
+}
+
+
+#navbar {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: black;
+    color: black;
+    
+    
+}
+#navbar li{
+    
+    padding: 0 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    
+    
+    
+}
+
+/* #navbar li  a{
+    color: #7F8487;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+#navbar  li a:hover,
+#navbar  li a.active {
+    color:white;
+} */
+
+/* #navbar  li a.active::after{
+    content: " ";
+    width : 40%;
+    bottom:-5px;
+    height: 2px;
+    left: 20px;
+    position: absolute;
+    background: white;
+    
+    
+} */
+
+
+/* home1 */
+#home1 {
+    background: url(/images/newbg2.jpg );
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  
+    height: 90vh;
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+ 
+}
+#home1 h1 {
+    font-size:150px;
+    padding-bottom: 20px;
+    color:transparent;
+    /* border: solid 1px white; */
+    -webkit-text-stroke: 1px white;
+    background:url(/images/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0 ;
+    animation: back 20s linear infinite;
+    
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0 ;
+    }
+}
+
+/* #home1 h1:hover{
+    font-size: 110px;
+} */
+#home1 h2{
+    font-size:80px;
+    font-family: 'Lobster', cursive;
+    color:white;
+   
+    
+}
+#home1 h4{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#home1 p{
+    font-size:20px;
+    padding-bottom:20px;
+    color: rgba(53, 177, 11, 0.822);
+}
+#home1 button{
+    background-image: url("img/m1.jpg");
+    /* background-color: #F5C7A9; */
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding: 14px 80px 14px 65px;
+    
+}
+@media (max-width:900px){
+    #home1{
+        text-align: center;
+    }
+}
+
+/* home 2 section */
+#home2{
+  
+    text-align: center;
+    padding: 5% 5%;
+    
+
+}
+#home2 h1{
+    color: black;
+}
+
+#home2 .icons{
+    width: 100%;
+    height: 10rem; 
+    padding: 8%;
+    
+    
+}
+#home2 img{
+    height: 100px;
+    width: 100px;
+}
+
+.image{
+    width: 200px;
+}
+
+
+#home2 p {
+    color: green;
+    margin-top:2%;
+}
+
+/* decorate*/
+#decorate{
+ /* background-image: url("https://image.shutterstock.com/image-photo/multicolor-powder-explosion-on-black-260nw-1935937942.jpg"); */
+ /* background-image: url("img/home2.jpg"); */
+ background-color: #100F0F;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ background-attachment : fixed;
+ 
+ text-align: center;
+    
+
+}
+#decorate .carousel-item {
+    text-align: center;
+    padding:0;
+}
+
+#decorate .fashion-img{
+    width: 450px;
+    padding: 20px;
+}
+
+#decorate #testimonials-carousel{
+    padding: 5%;
+
+}
+#decorate .testimonial-text{
+    padding: 2%;
+    margin: 2%;
+    background-color: #94B49F;
+    color: black;
+    width: 40%;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+/* product */
+#product{
+    text-align: center;
+    /* margin: 0 auto; */
+    /* padding: 5% 5%; */
+    /* background-color: red; */
+    /* justify-content:center; */
+}
+
+#product .feature-box {
+    
+    padding: 3% 7%;
+    text-align: center;
+    
+
+   
+}
+
+.feature-box :hover {
+    /* box-shadow: 0 5px 15px rgba(18, 19, 20, 0.8); */
+    
+
+}
+
+#product .card-body{
+    height: 10rem;
+    text-align: center;
+}
+#product .card{
+    /* background-image: url("https://t3.ftcdn.net/jpg/03/26/43/54/360_F_326435430_16afW26tzA2FFQy0kconTGJAoiBoRArJ.jpg"); */
+    background-color: #94B49F;
+    text-align: center;
+    height: 35rem;
+}
+#product .card-title{
+    color: white;
+}
+
+/* footer */
+.container{
+    /* background-color: red; */
+    margin: auto;
+    max-width: 1120px;
+    text-align: left;
+    
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+   
+}
+#footer{
+    color: black;
+    /* text-align: center; */
+    padding: 50px 10px;
+    /* background-image: url("https://captionsgram.com/wp-content/uploads/2020/12/Laugh-Puns.jpg"); */
+    background-position: center;
+    /* background-image: url("img/home2.jpg"); */
+    background-color: #000000;
+    background-size:cover;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-between; */
+    
+}
+#footer h1{
+    font-size:28px;
+    text-transform: capitalize;
+    padding-bottom:20px;
+    position: relative;
+}
+#footer h1::before{
+    content:'';
+    position: absolute;
+    left:0;
+    background-color: red;
+    bottom: 10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+#footer ul li:not(:last-child){
+    margin-bottom:10px;
+}
+#footer ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight:300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+}
+#footer ul li a:hover{
+    color: #ffff;
+    padding-left: 10px;
+}
+#footer .social-links a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    line-height: 50px;
+    border-radius:50%;
+
+}
+/* @media(max-width:600px){
+    
+    #decorate{
+       
+       
+    }
+} */
+#banner{
+    /* border: 1px solid red; */
+}
+#banner h2,p{
+    color: black;
+}
+#banner{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 3% 8%;
+    /* padding: 0 3%; */
+}
+#banner .banner-box{
+    min-width: 580px;
+    background-image: url("https://media.istockphoto.com/photos/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-picture-id1193750118?b=1&k=20&m=1193750118&s=170667a&w=0&h=dWmXq8D_P7sHRIZn-fPNRLPJaAvSvJmeYH9Bsq8Ywhs=");
+    background-size: cover;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 50vh;
+
+    padding: 15px 5px ;
+
+
+}
+#banner .banner-box2{
+    min-width: 580px;
+    background-image: url("https://thumbs.dreamstime.com/b/girl-talking-to-friend-pointing-right-to-indicate-person-charming-carefree-confident-young-stylish-female-tattoo-134568700.jpg");
+    background-size: cover;
+    background-position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    height: 50vh;
+
+    padding: 15px 5px ;
+
+
+}
+
+
+/* media query */
+@media (max-width: 700px){
+    #home1{
+        width: 100%;
+        padding: 10px 20px;
+    }
+    #content {
+            /* margin: 0 auto; */
+            text-align: center;
+        /* padding: 10px 20px; */
+        /* width: 100%; */
+    }
+    #content h1,h2,h3,h4,h5,h6{
+        font-size:40px;
+    }
+}
+
+
+/* men women section */
+#mw{
+    padding: 9% 5%;
+    text-align: center;
+}
+#mw img{
+    /* display: inline-block; */
+    width: 100%;
+    height:900px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #100F0F;
+  }
+
+  .text {
+    color: #F9F5EB;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.shop:hover .overlay {
+    opacity: 1;
+    
+}
+

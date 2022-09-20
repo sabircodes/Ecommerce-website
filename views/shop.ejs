@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOP</title>
+  <!-- aos from github -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- logo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+VIC+WA+NT+Beginner:wght@600&family=Lobster&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet" />
+  <!-- FONTAWESOME -->
+  <script src="https://kit.fontawesome.com/c5fa13ce00.js" crossorigin="anonymous"></script>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <!-- css -->
+  <link rel="stylesheet" href="css/shopstyle.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!-- navbar -->
+  <section id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">DEVILS WARDROBE</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+           
+              <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"aria-expanded="false">Filter</button>
+                <div class="dropdown-menu">
+  
+                  <a class="dropdown-item  bn-active"  href="#" data-filter="all" >ALL</a>
+                  <a class="dropdown-item bn "  href="#" data-filter="male" >MALE</a>
+                  <a class="dropdown-item bn" href="#" data-filter="female" onclick="malefunc()">FEMALE</a>
+                  <div class="dropdown-divider"></div>  
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/"> HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/shop">SHOP </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/blog"> BLOG </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/contact"> CONTACT ME </a>
+            </li>
+            <li class="nav-item">
+              <a class="alternate" href="/login"> Login </a>
+            </li>
+          </ul>
+          <!-- //cart bana rha hub yaha pe  -->
+          <div class="cart-box">
+              <div class="cart-icon"><i class="fa-solid fa-cart-shopping fa-1.5x non-empty"></i></div>
+              <div class="whole-cart-window hide">
+                <h2>Shopping Cart</h2>
+                <div class="cart-wrapper">
+
+                  <div class="cart-item">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F57%2Ff1%2F57f11545bb72593efc04dd3d447fa13e1985aadc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+                    <div class="details">
+                      <h3>Shacket</h3>
+                      <p>a piece of beauty</p>
+                      <span class="quantity">Quantity: 1</span>
+                      <span class="price">$1999</span>
+                    </div>
+                    <div class="cancel"><i class="fa-solid fa-rectangle-xmark"></i></div>
+                  </div>
+                  <div class="cart-item">
+                    <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2F4b%2F694ba1b518d1003194b91e92f709a160cb8c91a5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirt_dressed_slimfit%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+                    <div class="details">
+                      <h3>Shirt</h3>
+                      <p>Elegance</p>
+                      <span class="quantity">Quantity: 1</span>
+                      <span class="price">$1299</span>
+                    </div>
+                    <div class="cancel"><i class="fa-solid fa-rectangle-xmark"></i></div>
+                  </div>
+
+                </div>
+                  
+                  <div class="subtotal">subtotal: $0.00</div>
+                <div  class="Checkout">Checkout</div>
+                <div  class="view-cart">View-cart</div>
+
+                </div>
+                
+              </div>
+
+
+          </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- banner section -->
+  <section class="banner marginclass">
+    <div class="longbanner">
+      <!-- <img src="" alt=""> -->
+      <h1>What are you waiting for ?</h1>
+
+      <span>Let the shopping spree begin</span>
+    </div>
+
+  </section>
+
+ 
+
+   <section class="products marginclass ">
+
+    <div class="slide-container">
+      <section class="container" id="store-products">
+      
+      <div data-id ="1" class="store-product male">
+          <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F57%2Ff1%2F57f11545bb72593efc04dd3d447fa13e1985aadc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+          <div class="product-details">
+              <h2>Shacket</h2>
+              <p class="price">$99</p>
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+
+      <div data-id ="2" class="store-product male">
+          <img src="https://lp2.hm.com/hmgoepprod?set=source[/e4/64/e464169d65b7749cf7ca554ec5c769b3094d237f.jpg],origin[dam],category[men_tshirtstanks_longsleeve],type[DESCRIPTIVESTILLLIFE],res[y],hmver[2]&call=url[file:/product/main]" alt="">
+          <div class="product-details">
+              <h2>Rugby tshirt</h2>
+              <p class="price">$99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+              <a href="/product" class="btn btn-dark btn-sm active" role="button" aria-pressed="true">Visit</a>
+          </div>
+      </div>
+
+      <div data-id ="3" class="store-product male">
+          <img src="https://lp2.hm.com/hmgoepprod?set=format%5Bwebp%5D%2Cquality%5B79%5D%2Csource%5B%2F4d%2F5d%2F4d5de68e01f1d8edc7bd781e2d04c24901cc6111.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_longsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url%5Bfile%3A%2Fproduct%2Fmain%5D" alt="">
+          <div class="product-details">
+              <h2>striped</h2>
+              <p class="price">$99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+              <a href="/product1" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Visit</a>
+              
+          </div>
+      </div>
+
+      <div data-id ="4"class="store-product male">
+          <img src="https://media.gucci.com/style/HEXEAF2DC_Center_0_0_800x800/1660319107/699626_XNAPL_1152_002_100_0000_Light-Asymmetrical-zip-leather-jacket.jpg" alt="">
+          <div class="product-details">
+              <h2>Shirt </h2>
+              <p class="price">$899</p>
+              
+              <a class="addtocart">Add to Cart</a>
+              <a href="/product4" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Visit</a>
+              
+              
+          </div>
+      </div>
+
+      <div data-id ="5"class="store-product male">
+          <img src="https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dwa5def3cf/original/90_1005948-1A04244_2E880_10_LaGrecaMixedKnitJumper-Knitwear-versace-online-store_0_1.jpg?sw=748&sh=1050&sm=fit&sfrm=jpg" alt="">
+          <div class="product-details">
+              <h2>Knit shirt</h2>
+              <p class="price">$999</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+              <!-- <a href="product.html" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Visit</a> -->
+              <a href="/productv" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Visit</a>
+          </div>
+      </div>
+
+
+      <div data-id ="6" class="store-product male">
+          <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2F4b%2F694ba1b518d1003194b91e92f709a160cb8c91a5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirt_dressed_slimfit%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+          <div class="product-details">
+              <h2>Shirt Product</h2>
+              <p class="price">$200</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+
+
+      <div data-id ="7" class="store-product female">
+          <img src="https://www.versace.com/dw/image/v2/ABAO_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw7119987d/original/90_1005921-1A00537_1B000_10_MedusaMiniDress-Dresses-versace-online-store_0_0.jpg?sw=150&sh=208&sm=fit&sfrm=jpg" alt="">
+          <div class="product-details">
+              <h2>Gown Product</h2>
+              <p class="pric">$7000</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+              <a href="/productv2" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Visit</a>
+          </div>
+      </div>
+
+
+      <div data-id ="8" class="store-product female">
+          <img src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F69%2F4b%2F694ba1b518d1003194b91e92f709a160cb8c91a5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirt_dressed_slimfit%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]" alt="">
+          <div class="product-details">
+              <h2>Shirt Product</h2>
+              <p class="price">$24.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+
+
+      <div data-id ="9" class="store-product female">
+          <img src="./images/8.png" alt="">
+          <div class="product-details">
+              <h2>Shirt Product</h2>
+              <p class="price">$44.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+      <div data-id ="10" class="store-product male">
+          <img src="https://mediacdn.livestory.io/v1/armani/posts/r1000/62adc238b417e1000bcf804c.jpg" alt="">
+          <div class="product-details">
+              <h2>Jewelry Product</h2>
+              <p class="price">$29828.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+      <div data-id ="11" class="store-product female">
+          <img src="https://www.armani.com/variants/images/36856120585343447/F/w480.jpg" alt="">
+          <div class="product-details">
+              <h2>Jewelry Product</h2>
+              <p class="price">$828.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+      <div data-id ="12" class="store-product female">
+          <img src="https://www.armani.com/variants/images/17266703523625491/F/w480.jpg" alt="">
+          <div class="product-details">
+              <h2>Jewelry Product</h2>
+              <p class="price">$828.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+      <div data-id ="13" class="store-product male">
+          <img src="https://www.armani.com/variants/images/36594538430100841/F/w480.jpg" alt="">
+          <div class="product-details">
+              <h2>Jewelry Product</h2>
+              <p class="price">$828.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+      <div data-id ="14" class="store-product female">
+          <img src="https://www.armani.com/variants/images/25185454457139188/R/w480.jpg" alt="">
+          <div class="product-details">
+              <h2>Jewelry Product</h2>
+              <p class="price">$828.99</p>
+              <!-- <a href="#">Add to Cart</a> -->
+              <a class="addtocart">Add to Cart</a>
+          </div>
+      </div>
+  </section>
+</div>
+  </section>
+<!-- footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <h1>Company</h1>
+        <ul>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Our services</a>
+          </li>
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h1>Get help</h1>
+        <ul>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Shopping</a>
+          </li>
+          <li>
+            <a href="#">return</a>
+          </li>
+          <li>
+            <a href="#">Order Status</a>
+          </li>
+          <li>
+            <a href="#">Paymnet option</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h1>Follow us</h1>
+        <div class="social-links">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+              <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+ 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 2000,
+    });
+  </script>
+  <script src="jss/shop.js"></script>
+</body>
+
+</html>
