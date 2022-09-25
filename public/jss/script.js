@@ -1,67 +1,121 @@
-// alert("it is working!");
-var men = document.querySelectorAll(".male");
-var len = men.length; 
-function malefunc(){
-    for(var i = 0 ; i < len ; i++){
-        men[i].style.display = "none";
-    }
+'use strict';
+
+// all initial elements
+const payAmountBtn = document.querySelector('#payAmount');
+const decrementBtn = document.querySelectorAll('#decrement');
+const quantityElem = document.querySelectorAll('#quantity');
+const incrementBtn = document.querySelectorAll('#increment');
+const priceElem = document.querySelectorAll('#price');
+const subtotalElem = document.querySelector('#subtotal');
+const taxElem = document.querySelector('#tax');
+const totalElem = document.querySelector('#total');
+
+
+// loop: for add event on multiple `increment` & `decrement` button
+for (let i = 0; i < incrementBtn.length; i++) {
+
+  incrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `increment` button sibling.
+    let increment = Number(this.previousElementSibling.textContent);
+
+    // plus `increment` variable value by 1
+    increment++;
+
+    // show the `increment` variable value on `quantity` element
+    // based on clicked `increment` button sibling.
+    this.previousElementSibling.textContent = increment;
+
+    totalCalc();
+
+  });
+
+
+  decrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `decrement` button sibling.
+    let decrement = Number(this.nextElementSibling.textContent);
+
+    // minus `decrement` variable value by 1 based on condition
+    decrement <= 1 ? 1 : decrement--;
+
+    // show the `decrement` variable value on `quantity` element
+    // based on clicked `decrement` button sibling.
+    this.nextElementSibling.textContent = decrement;
+
+    totalCalc();
+
+  });
 
 }
 
-const btn = document.querySelectorAll(".bn");
-const pro = document.querySelectorAll(".card");
 
-for(var i =0 ; i < btn.length; i++){
-    btn[i].addEventListener("click", (e)=>{
-        e.preventDefault();
-        const filter = e.target.dataset.filter;
-        console.log(filter);
 
-        pro.forEach((product)=>{
-            if (filter === 'all'){
-                product.style.display = 'block'
-            } else{
-                if(product.classList.contains(filter)){
-                    product.style.display="block";
-                }
-                else{
-                    product.style.display="none";
-    
-                }
-            }
-         
-        });
-    });
-};
+// function: for calculating total amount of product price
+const totalCalc = function () {
+
+  // declare all initial variable
+  const tax = 0.05;
+  let subtotal = 0;
+  let totalTax = 0;
+  let total = 0;
+
+  // loop: for calculating `subtotal` value from every single product
+  for (let i = 0; i < quantityElem.length; i++) {
+
+    subtotal += Number(quantityElem[i].textContent) * Number(priceElem[i].textContent);
+
+  }
+
+  // show the `subtotal` variable value on `subtotalElem` element
+  subtotalElem.textContent = subtotal.toFixed(2);
+
+  // calculating the `totalTax`
+  totalTax = subtotal * tax;
+
+  // show the `totalTax` on `taxElem` element
+  taxElem.textContent = totalTax.toFixed(2);
+
+  // calcualting the `total`
+  total =  total;
+
+  // show the `total` variable value on `totalElem` & `payAmountBtn` element
+  totalElem.textContent = total.toFixed(2);
+  payAmountBtn.textContent = total.toFixed(2);
+
+}
+
 
 // logic for cart 
 const carticon = document.querySelector('.fa-cart-shopping ');
 const wholecartwindow = document.querySelector('.whole-cart-window')
 wholecartwindow.inWindow = 0;
 
-carticon.addEventListener('mouseover',()=>{
-    if( wholecartwindow.classList.contains('hide')){
-        wholecartwindow.classList.remove('hide'); 
-    }
+// carticon.addEventListener('mouseover',()=>{
+//     if( wholecartwindow.classList.contains('hide')){
+//         wholecartwindow.classList.remove('hide'); 
+//     }
 
-})
-carticon.addEventListener('mouseleave',()=>{
-    setTimeout(()=>{
-        if(wholecartwindow.inWindow===0){
-            wholecartwindow.classList.add('hide');
-        }
-    },200)
-})
+// })
+// carticon.addEventListener('mouseleave',()=>{
+//     setTimeout(()=>{
+//         if(wholecartwindow.inWindow===0){
+//             wholecartwindow.classList.add('hide');
+//         }
+//     },200)
+// })
 
-wholecartwindow.addEventListener ( 'mouseover' , ()=> {
+// wholecartwindow.addEventListener ( 'mouseover' , ()=> {
 
-    wholecartwindow.inWindow = 1
-} )
+//     wholecartwindow.inWindow = 1
+// } )
 
-wholecartwindow.addEventListener ( 'mouseleave' , ()=> {
-   wholecartwindow.inWindow = 0
-   wholecartwindow.classList.add ('hide' )
-} )
+// wholecartwindow.addEventListener ( 'mouseleave' , ()=> {
+//    wholecartwindow.inWindow = 0
+//    wholecartwindow.classList.add ('hide' )
+// } )
 
 
 //logic for adding cart item 
@@ -192,13 +246,9 @@ function updateCartUI(){
         let root = document.querySelector(':root')
         root.style.setProperty('--after-content', `"${count}"`)
         const subtotal = document.querySelector('.subtotal')
-        subtotal.innerHTML = `SubTotal: $${total}`
+        subtotal.innerHTML = `Pay: $${total}`
     }
     else
     cartIcon.classList.remove('non-empty')
 }
 document.addEventListener('DOMContentLoaded', ()=>{updateCartUI()})
-
-
-
-

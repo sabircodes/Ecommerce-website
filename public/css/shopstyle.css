@@ -404,3 +404,8 @@ form input {
   background-color:red;
   border-radius: 50%;
 }
+
+.vanish{
+  display:none;
+
+}

@@ -32,8 +32,8 @@ if (process.env.NODE_ENV !== 'production') {
   app.use(methodOverride('_method'))
   app.use(express.static("public"));
   
-  app.get('/confirm', checkAuthenticated, (req, res) => {
-    res.render('indexlogin.ejs', { name: req.user.name })
+  app.get('/checkout', checkAuthenticated, (req, res) => {
+    res.render('checkout.ejs', { name: req.user.name })
   })
     
   app.get('/login', checkNotAuthenticated, (req, res) => {
@@ -41,7 +41,7 @@ if (process.env.NODE_ENV !== 'production') {
   })
   
   app.post('/login', checkNotAuthenticated, passport.authenticate('local', {
-    successRedirect: '/',
+    successRedirect: '/checkout',
     failureRedirect: '/login',
     failureFlash: true
   }))
@@ -125,6 +125,18 @@ app.get('/productv2', (req, res) => {
 app.get('/product4', (req, res) => {
     // res.send("Hey sabir server is running ")
     res.render('product4.ejs');
+})
+app.get('/checkout', (req, res) => {
+    // res.send("Hey sabir server is running ")
+    res.render('checkout.ejs');
+})
+app.get('/men', (req, res) => {
+    // res.send("Hey sabir server is running ")
+    res.render('mens.ejs');
+})
+app.get('/women', (req, res) => {
+    // res.send("Hey sabir server is running ")
+    res.render('women.ejs');
 })
   
   app.listen(3000 , function(){
